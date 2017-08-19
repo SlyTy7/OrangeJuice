@@ -67,6 +67,10 @@ main {
 	width: 175px;
 }
 
+.bar input:focus{
+	outline: none;
+}
+
 .bar i {
 	color: #9a9a9a;
 }/* END SEARCH BAR*/
