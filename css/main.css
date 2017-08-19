@@ -131,6 +131,7 @@ main {
 	text-transform: uppercase;
 	width: 40%;
 	padding: 15px;
+	transition: ease 1s;
 }
 
 .buttons a:first-child{
@@ -138,9 +139,17 @@ main {
 	float: left;
 }
 
+.buttons a:first-child:hover{
+	background-color: #7accc8;
+}
+
 .buttons a:last-child{
 	background-color: #7accc8;
 	float: right;
+}
+
+.buttons a:last-child:hover{
+	background-color: #fe7e00;
 }/* END MAIN SECTION*/
 
 
