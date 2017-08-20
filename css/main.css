@@ -12,23 +12,26 @@ body {
 /* HEADER */
 header {
 	background-color: #fe7e00;
-	height: 65px;
+	padding: 10px;
 }
 
 .logo {
-	float: left;
-	margin: 10px 20px;
+	display: inline-block;
+	width: 33%;
 }
 
 .nav {
-	float: right;
+	display: inline-block;
 	list-style: none;
-	margin-right: 30px;
+	width: 66%;
+	vertical-align: top;
+	text-align: right;
+	margin: 15px auto;
 }
 
 .nav li {
-	display: inline-block;
-	margin: 20px 30px;
+	display: inline;
+	margin: 0 4%;
 }
 
 .nav a{
@@ -79,19 +82,20 @@ main {
 
 .left, .right{
 	display: inline-block;
-	margin-top: 75px;
+	margin-top: 60px;
 	float: left;
 	width: 45%;
 }
 
 .right {
 	text-align: center;
+	margin-bottom: 80px;
 }
 
 .left img{
 	margin: 0 auto;
 	display: block;
-	width: 500px;
+	width: 100%;
 }
 
 
@@ -103,8 +107,7 @@ main {
 	color: #fe7e00;
 	display: block;
 	text-align: left;
-	margin-top: 35px;
-	margin-right: 10px;
+	margin-bottom: 30px;
 }
 
 .right p span:first-child {
@@ -119,9 +122,8 @@ main {
 
 /* BUTTONS */
 .buttons {
-	display: block;
-    text-align: center;
-    margin: 20px 30px;
+	text-align: left;
+	margin-bottom: 75px;
 }
 
 .buttons a {
@@ -129,14 +131,16 @@ main {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	width: 40%;
-	padding: 15px;
+	width: 30%;
+	margin: 0 5%;
+	padding: 13px;
 	transition: ease 1s;
+	vertical-align: top;
+	text-align: center;
 }
 
 .buttons a:first-child{
 	background-color: #fe7e00;
-	float: left;
 }
 
 .buttons a:first-child:hover{
@@ -145,7 +149,6 @@ main {
 
 .buttons a:last-child{
 	background-color: #7accc8;
-	float: right;
 }
 
 .buttons a:last-child:hover{
@@ -157,8 +160,56 @@ main {
 footer {
 	background-color: #7accc8;
 	height: 65px;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	right: 0;
+}
+
+
+
+@media (max-width: 860px) {
+  .right p {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 690px) {
+
+	.nav li {
+		margin: 0 2%;
+	}
+
+	.left img {
+		width: 75%;
+	}
+
+	.right p {
+    	font-size: 30px;
+    	text-align: justify;
+  	}
+
+  	.buttons a {
+  		margin: 0 3%;
+  	}
+}
+
+@media (max-width: 575px) {
+
+	.logo {
+		display: none;
+	}
+
+	.nav {
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.left, .right {
+		display: block;
+		float: none;
+		width: 75%;
+		margin: 0 auto;
+	}
 }
