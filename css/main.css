@@ -42,6 +42,10 @@ header {
 	font-size: 14px;
 }
 
+.nav a:hover {
+	text-decoration: underline;
+}
+
 
 /* MAIN SECTION */
 main {
