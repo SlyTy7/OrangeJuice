@@ -205,6 +205,9 @@ footer {
 		text-align: center;
 	}
 
+	.nav li {
+		margin: 0 1%;
+	}
 
 	.left, .right {
 		display: block;
